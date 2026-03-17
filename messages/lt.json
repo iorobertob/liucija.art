@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "backToMap": "Grįžti į žemėlapį",
+    "menu": "Meniu",
+    "close": "Uždaryti",
+    "introduction": "Įvadas",
+    "conclusion": "Išvados",
+    "about": "Apie",
+    "language": "EN",
+    "download": "Atsisiųsti tezę",
+    "downloadLT": "LT (PDF, 3.2 MB)",
+    "downloadEN": "EN (PDF, 2.2 MB)",
+    "downloadPrint": "Spausdinti / išsaugoti PDF"
+  },
+  "home": {
+    "subtitle": "Meninis tyrimas",
+    "explore": "Tyrinėti",
+    "hint": "Spustelėkite mazgą, kad atidarytumėte skyrių"
+  },
+  "about": {
+    "title": "Apie",
+    "practice": "Meninė praktika",
+    "projects": "Projektai"
+  },
+  "thesis": {
+    "readSection": "Skaityti skyrių",
+    "prevSection": "Ankstesnis",
+    "nextSection": "Kitas",
+    "backToSection": "Grįžti į skyrių"
+  },
+  "sections": {
+    "introduction": {
+      "title": "Įvadas",
+      "slug": "ivadas"
+    },
+    "section1": {
+      "title": "Tvarumo vizijos",
+      "slug": "tvarumo-vizijos",
+      "description": "Antropoceno krizės atspindžiai ir gamtos–kultūros santykio tyrinėjimas",
+      "subs": {
+        "1": { "title": "Ateitis ties išnykimo riba", "slug": "ateitis-ties-isnykimo-riba" },
+        "2": { "title": "Kultūra gamtoje ar gamta kultūroje?", "slug": "kultura-gamtoje" },
+        "3": { "title": "Tvarumas simbiozėje", "slug": "tvarumas-simbiozeje" }
+      }
+    },
+    "section2": {
+      "title": "Įkvėpti pokyčius",
+      "slug": "ikepti-pokycius",
+      "description": "Meno galia kurti ryšius ir inspiruoti tvarumo vizijas",
+      "subs": {
+        "1": { "title": "Meno skambesiai", "slug": "meno-skambesiai" },
+        "2": { "title": "Tvarumo vizijų kūrėjai", "slug": "tvarumo-viziju-kurejai" },
+        "3": { "title": "Bendrumas kūrime", "slug": "bendrumas-kurime" }
+      }
+    },
+    "section3": {
+      "title": "Žemės simfonija",
+      "slug": "zemes-simfonija",
+      "description": "Asmeninis kūrybinis projektas ir kolektyviniai siuvinėjimo susitikimai",
+      "subs": {
+        "1": { "title": "Dėmuo gamtos struktūroje", "slug": "demuo-gamtos-strukturoje" },
+        "2": { "title": "Mus jungiančios gijos", "slug": "mus-jungianciosios-gijos" },
+        "3": { "title": "Ryšių rizoma", "slug": "rysiu-rizoma" }
+      }
+    },
+    "conclusion": {
+      "title": "Išvados",
+      "slug": "isvados"
+    }
+  }
+}

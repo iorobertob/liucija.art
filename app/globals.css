@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+
+  --color-parchment: #F5EDD8;
+  --color-parchment-dark: #EAD9BB;
+  --color-ink: #1A1A18;
+  --color-ink-light: #3A3A36;
+  --color-moss: #4A7C59;
+  --color-moss-light: #6FA882;
+  --color-terracotta: #C4623A;
+  --color-ochre: #D4A843;
+  --color-forest: #0D1F14;
+  --color-forest-mid: #1A3323;
+}
+
+@theme inline {
+  --color-background: var(--color-parchment);
+  --color-foreground: var(--color-ink);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure Three.js / WebGL canvases can receive touch events on mobile */
+canvas {
+  touch-action: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+  font-family: var(--font-cormorant);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Thesis content typography */
+.thesis-body {
+  font-family: var(--font-cormorant);
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.85;
+  color: var(--color-ink);
+}
+
+.thesis-body p {
+  margin-bottom: 1.5em;
+}
+
+.thesis-body blockquote {
+  border-left: 2px solid var(--color-ochre);
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
+  font-style: italic;
+  color: var(--color-ink-light);
+  font-size: 1.05em;
+}
+
+.thesis-body h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-ink);
+}
+
+.thesis-body h3 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-moss);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-parchment-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-moss);
+  border-radius: 3px;
+}
+
+/* Nav link hover underline */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-moss);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
