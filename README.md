@@ -98,152 +98,98 @@ scripts/
 
 ---
 
-## Deployment — Namecheap VPS with cPanel
+## Deployment — Namecheap Shared Hosting (cPanel)
 
-> This is the recommended path for the current hosting setup.
-> Use this section. The generic Linux/Nginx section below is for reference only.
+This setup uses cPanel's **Setup Node.js App** feature, which runs the app via **Phusion Passenger**. Passenger handles domain routing automatically — no Apache/Nginx configuration, no PM2, no root access needed.
 
-### Why cPanel is different
+### 1. Create `server.js` in the project root
 
-Namecheap VPS with cPanel/WHM runs **Apache** (not Nginx) on ports 80/443, managed entirely by cPanel. You **cannot** create Nginx vhosts or touch Apache's main config directly — cPanel would overwrite them. Instead:
+Passenger requires a custom entry point file. Add this to the repository before uploading:
 
-- The Node.js app runs on a private port (3000) via **PM2** over SSH
-- Apache proxies public traffic to it via a **`.htaccess`** rule or a cPanel-managed vhost include
-- The app lives under **`/home/<cpanel-user>/`**, not `/var/www/`
-- The OS is typically **AlmaLinux/CentOS** — use `dnf` instead of `apt`
+```js
+const { createServer } = require('http');
+const { parse } = require('url');
+const next = require('next');
 
-### Prerequisites (run once as root over SSH)
+const app = next({ dev: false });
+const handle = app.getRequestHandler();
 
-```bash
-# Connect to your VPS
-ssh root@your-server-ip
-
-# Node.js 20 via nvm (install under root; each cPanel user can have their own nvm too)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-source ~/.bashrc
-nvm install 20 && nvm use 20 && nvm alias default 20
-
-# Verify
-node -v   # → v20.x.x
-
-# PM2
-npm install -g pm2
-
-# Git (usually already installed on cPanel servers)
-git --version
+app.prepare().then(() => {
+  createServer((req, res) => {
+    const parsedUrl = parse(req.url, true);
+    handle(req, res, parsedUrl);
+  }).listen(process.env.PORT || 3000);
+});
 ```
 
-### First-time setup
+### 2. Upload the project to your server
+
+Connect via SSH (cPanel → Terminal, or any SSH client) and clone the repo into your home directory — **outside** `public_html`:
 
 ```bash
-# 1. Decide on a directory — outside public_html to keep source private
-#    Replace "cpaneluser" with your actual cPanel username
-APP_DIR="/home/cpaneluser/thesis-website"
+git clone https://github.com/YOUR_USER/thesis-website.git ~/thesis-website
+```
 
-git clone https://github.com/YOUR_USER/thesis-website.git "$APP_DIR"
-cd "$APP_DIR"
+Alternatively, upload the files via cPanel File Manager or FTP, keeping the same directory structure.
 
-# 2. Environment file
-cp .env.local.example .env.local
-# Edit .env.local if you need Sanity — otherwise leave it as-is
+### 3. Create the Node.js App in cPanel
 
-# 3. Install, build, start on port 3000
-npm ci
+Go to cPanel → **Setup Node.js App** → **Create Application**:
+
+| Setting | Value |
+|---|---|
+| Node.js version | 20.x or higher |
+| Application mode | Production |
+| Application root | `thesis-website` (relative to your home dir) |
+| Application URL | your domain or subdomain |
+| Application startup file | `server.js` |
+
+Click **Create**. cPanel will set up Passenger and link your domain to the app automatically.
+
+### 4. Install dependencies
+
+In the app settings page, click **Run NPM Install**. This installs all dependencies using cPanel's Node.js environment.
+
+### 5. Build the app
+
+Open cPanel → **Terminal** (or SSH) and run:
+
+```bash
+cd ~/thesis-website
 npm run build
-pm2 start npm --name "thesis" -- start
-pm2 save
-
-# 4. Make PM2 restart on server reboot
-pm2 startup
-# → PM2 will print a command like:
-#   sudo env PATH=... pm2 startup systemd -u root --hp /root
-# Run that command exactly as printed.
 ```
 
-### Point the domain to Node.js (Apache reverse proxy)
+> **Note:** Next.js builds are memory-intensive. On shared hosting, if the build fails with an out-of-memory error, you can build locally on your machine and upload the `.next` folder via FTP/File Manager instead.
 
-cPanel uses Apache. Enable proxying for your domain via one of these two methods:
+### 6. Set environment variables
 
-**Method A — `.htaccess` (easiest, no WHM access needed)**
+In cPanel → Setup Node.js App → your app → **Environment Variables**, add:
 
-In cPanel → File Manager, open the `.htaccess` file inside the domain's `public_html` folder
-(or create it if it doesn't exist) and add:
-
-```apache
-RewriteEngine On
-
-# Proxy everything to Node.js on port 3000
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^ - [L]
-
-# WebSocket support
-RewriteCond %{HTTP:Upgrade} websocket [NC]
-RewriteRule /(.*) ws://127.0.0.1:3000/$1 [P,L]
-
-RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
-
-# Pass real IP to Node
-RequestHeader set X-Forwarded-Proto "https"
-RequestHeader set X-Real-IP %{REMOTE_ADDR}s
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_API_TOKEN=your_token
 ```
 
-> This requires `mod_proxy` and `mod_rewrite` to be enabled in WHM → Apache Configuration.
-> On Namecheap managed VPS they are enabled by default.
+### 7. Start the application
 
-**Method B — WHM Apache include (cleaner, requires WHM root access)**
+Click **Start App**. Passenger will start the Node.js process and serve it at your domain. It manages restarts automatically — no PM2 or manual process management needed.
 
-In WHM → Apache Configuration → Include Editor → Pre VirtualHost Include, add for your domain:
+### SSL / HTTPS
 
-```apache
-<VirtualHost *:443>
-    ServerName luicija.art
-    ServerAlias www.luicija.art
-
-    ProxyPreserveHost On
-    ProxyPass / http://127.0.0.1:3000/
-    ProxyPassReverse / http://127.0.0.1:3000/
-
-    # WebSocket support
-    RewriteEngine On
-    RewriteCond %{HTTP:Upgrade} websocket [NC]
-    RewriteRule /(.*) ws://127.0.0.1:3000/$1 [P,L]
-</VirtualHost>
-```
-
-Then restart Apache: **WHM → Restart Services → HTTP Server (Apache)**.
-
-### HTTPS / SSL
-
-cPanel handles SSL automatically. In cPanel → SSL/TLS → AutoSSL, run "Run AutoSSL" for your domain.
-This provisions a free Let's Encrypt certificate and renews it automatically — no `certbot` command needed.
-
-### Verify it's working
-
-```bash
-# Check the Node.js process is running
-pm2 list
-
-# Check it responds locally
-curl http://127.0.0.1:3000/lt
-
-# Tail logs if something is wrong
-pm2 logs thesis --lines 50
-```
+cPanel handles this automatically. Go to cPanel → **SSL/TLS** → **AutoSSL** and run it for your domain. It provisions and renews a free Let's Encrypt certificate without any extra tools.
 
 ### Subsequent deploys
 
-Use the cPanel deploy script:
-
 ```bash
-bash /home/cpaneluser/thesis-website/scripts/deploy-cpanel.sh
+# Via SSH / cPanel Terminal
+cd ~/thesis-website
+git pull
+npm install
+npm run build
 ```
 
-Or trigger it remotely from your machine:
-
-```bash
-ssh root@your-server-ip "bash /home/cpaneluser/thesis-website/scripts/deploy-cpanel.sh"
-```
+Then go to cPanel → Setup Node.js App → **Restart** the app.
 
 ---
 
