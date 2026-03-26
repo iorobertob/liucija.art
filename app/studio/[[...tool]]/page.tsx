@@ -102,7 +102,7 @@ export default function StudioPage() {
                 {`NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id_here\nNEXT_PUBLIC_SANITY_DATASET=production`}
               </pre>
             </li>
-            <li>Restart the development server</li>
+            <li>Run <code style={{ background: "#EAD9BB", padding: "1px 6px", fontSize: "0.9em" }}>npm run build</code> — then restart the server</li>
           </ol>
           <p
             style={{

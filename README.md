@@ -150,16 +150,17 @@ Click **Create**. cPanel will set up Passenger and link your domain to the app a
 
 In the app settings page, click **Run NPM Install**. This installs all dependencies using cPanel's Node.js environment.
 
-### 5. Build the app
+### 5. Build the app locally and upload
 
-Open cPanel → **Terminal** (or SSH) and run:
+> **Important:** Do not run `npm run build` on the shared server. Next.js + Three.js builds are memory-intensive and shared hosting will silently truncate output files, producing broken JS chunks that fail with `Unexpected end of input` in the browser.
+
+Always build on your local machine:
 
 ```bash
-cd ~/thesis-website
 npm run build
 ```
 
-> **Note:** Next.js builds are memory-intensive. On shared hosting, if the build fails with an out-of-memory error, you can build locally on your machine and upload the `.next` folder via FTP/File Manager instead.
+Then upload the `.next/` folder to `~/thesis-website/.next/` on the server via FTP, SFTP, or cPanel File Manager. The source files and `node_modules` do not need to change between deploys — only `.next/` needs to be replaced.
 
 ### 6. Set environment variables
 
@@ -181,15 +182,11 @@ cPanel handles this automatically. Go to cPanel → **SSL/TLS** → **AutoSSL** 
 
 ### Subsequent deploys
 
-```bash
-# Via SSH / cPanel Terminal
-cd ~/thesis-website
-git pull
-npm install
-npm run build
-```
+1. Make your changes locally and run `npm run build`
+2. Upload the updated `.next/` folder to `~/thesis-website/.next/` on the server
+3. In cPanel → Setup Node.js App → **Restart** the app
 
-Then go to cPanel → Setup Node.js App → **Restart** the app.
+If you also changed dependencies (`package.json`), click **Run NPM Install** in cPanel before restarting.
 
 ---
 
