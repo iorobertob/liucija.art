@@ -1,0 +1,14 @@
+{
+  "/[locale]/about/page": "/[locale]/about",
+  "/[locale]/page": "/[locale]",
+  "/[locale]/thesis/[section]/[sub]/page": "/[locale]/thesis/[section]/[sub]",
+  "/[locale]/thesis/[section]/page": "/[locale]/thesis/[section]",
+  "/[locale]/thesis/conclusion/page": "/[locale]/thesis/conclusion",
+  "/[locale]/thesis/introduction/page": "/[locale]/thesis/introduction",
+  "/[locale]/thesis/print/page": "/[locale]/thesis/print",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/studio/[[...tool]]/page": "/studio/[[...tool]]"
+}

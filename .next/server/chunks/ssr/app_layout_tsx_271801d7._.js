@@ -1,0 +1,3 @@
+module.exports=[233290,a=>{"use strict";var b=a.i(907997);function c({children:a}){return(0,b.jsx)("html",{suppressHydrationWarning:!0,children:(0,b.jsx)("body",{children:a})})}a.s(["default",()=>c,"metadata",0,{title:"Ryšių Rizoma — Liucija Dervinytė",description:"Menininkas kaip ryšių kūrėjas gamtos–kultūros rizomoje. Artist as a Creator of Connections in a Nature–Culture Rhizome.",openGraph:{title:"Ryšių Rizoma — Liucija Dervinytė",description:"Artistic research thesis exploring nature, culture, and the rhizome of connections.",type:"website"}}])}];
+
+//# sourceMappingURL=app_layout_tsx_271801d7._.js.map

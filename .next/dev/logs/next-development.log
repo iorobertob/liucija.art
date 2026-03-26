@@ -1,0 +1,2055 @@
+[00:00:01.028] Server  LOG     ✓ Ready in 828ms
+[00:00:01.029] Server  WARN    ⚠ Cross origin request detected from 192.168.1.121 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:02.014] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:02.160] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:02.160] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:07.519] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             __gchrome_remoteframetoken="e908094435662a24f695ac0bda096762"
+                            >
+                      ...
+          ...
+
+[00:00:07.678] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:00:46.540] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             __gchrome_remoteframetoken="da3ae0260713f7a27757044ce66c6240"
+                            >
+                      ...
+          ...
+
+[00:00:46.707] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:15:27.794] Server  LOG     ✓ Compiled in 264ms
+[00:15:54.472] Server  LOG     ✓ Compiled in 43ms
+[00:16:02.735] Server  LOG     ✓ Compiled in 16ms
+[00:22:59.489] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             __gchrome_remoteframetoken="77daaa5821099a185a227e387bf9ba48"
+                            >
+                      ...
+          ...
+
+[00:22:59.686] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:23:52.605] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:23:52.963] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:23:55.147] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:55.468] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[00:24:23.705] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:29.762] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:29.923] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:30.043] Browser WARN    Image with src "/images/img-003.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:30.270] Browser WARN    Image with src "/images/img-004.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:30.632] Browser WARN    Image with src "/images/img-005.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:31.069] Browser WARN    Image with src "/images/img-007.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:31.232] Browser WARN    Image with src "/images/img-008.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:31.614] Browser WARN    Image with src "/images/img-009.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:31.615] Browser WARN    Image with src "/images/img-012.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:31.615] Browser WARN    Image with src "/images/img-010.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:31.615] Browser WARN    Image with src "/images/img-011.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:31.615] Browser WARN    Image with src "/images/img-013.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.138] Browser WARN    Image with src "/images/img-016.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.138] Browser WARN    Image with src "/images/img-017.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.138] Browser WARN    Image with src "/images/img-018.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.138] Browser WARN    Image with src "/images/img-019.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.138] Browser WARN    Image with src "/images/img-020.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.138] Browser WARN    Image with src "/images/img-021.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.278] Browser WARN    Image with src "/images/img-022.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.479] Browser WARN    Image with src "/images/img-024.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.479] Browser WARN    Image with src "/images/img-025.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:24:32.479] Browser WARN    Image with src "/images/img-026.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:30:34.040] Server  LOG     ✓ Compiled in 18ms
+[00:36:22.664] Server  LOG     ✓ Compiled in 12ms
+[00:37:07.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:10.087] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:37:10.479] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:08.285] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:10.472] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:10.947] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:41:11.231] Browser WARN    Image with src "/images/img-003.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:57.472] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="[locale]/t...">
+      <SegmentTrieNode>
+      <PrintPage>
+        <style>
+        <PrintPage>
+          <div className="print-root">
+            <div className="print-sheet">
+              <div>
+              <div>
+              <div>
+              <div>
+              <div>
+                <div>
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Future at the Edge of Extinction"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-001.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-001.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-001.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="No room for waste"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-002.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-002.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-002.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="When the world forgets"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-003.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-003.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-003.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="The beast on a journey"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-004.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-004.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-004.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <p>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Nature / Innate quality"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-005.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-005.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-005.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <h3>
+                    <p>
+                    <p>
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Cultivation"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-006.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-006.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-006.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <p>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Nature–culture poles"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-007.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-007.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-007.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt={"Why can't we just agree?"}
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-008.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-008.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-008.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+              <div>
+                <div>
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <p>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Resonances of Art"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-009.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-009.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-009.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <p>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Inspiration for change"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-012.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-012.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-012.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Cameron Davis artwork"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-010.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-010.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-010.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Vita Zaman, Naujoji Vaidilutė"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-011.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-011.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-011.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Hyperlife, Rithika Merchant"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-013.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-013.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-013.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Mona Caron mural"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-014.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-014.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-014.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Opening of Spacetime Un[b]locked at Ideas Block"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-016.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-016.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-016.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="The Red Dress, Kirstie Macleod"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-017.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-017.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-017.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+              <div>
+                <div>
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Critical situation"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-018.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-018.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-018.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="The world needs a break"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-019.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-019.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-019.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Features of a new world"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-020.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-020.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-020.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Collective embroidery session"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-021.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-021.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-021.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Collective embroidery in Tartu"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-022.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-022.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-022.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Threads of conversation"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-023.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-023.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-023.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Rhizome of Connections"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-024.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-024.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-024.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Connected by a bond"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-025.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-025.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-025.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Knowledge and responsibility"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-026.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-026.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-026.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt={"Nature's tear"}
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-027.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-027.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-027.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+              ...
+    ...
+
+[00:42:57.472] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-003.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-008.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-005.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-004.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-007.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-009.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-012.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-011.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-010.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-013.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-016.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-017.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-018.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-019.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-020.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-021.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-022.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-024.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-025.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:57.472] Browser WARN    Image with src "/images/img-026.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:42:59.204] Browser LOG     Waiting for 26 images
+[00:43:00.803] Browser WARN    Image with src "/images/img-005.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:43:13.466] Server  LOG     ✓ Compiled in 11ms
+[00:43:32.641] Server  LOG     ✓ Compiled in 10ms
+[00:43:34.528] Server  LOG     ✓ Compiled in 12ms
+[01:22:52.354] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:52.625] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[01:22:55.530] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:22:56.038] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[01:23:16.166] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[01:23:59.495] Browser WARN    Image with src "/images/img-009.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:23:59.970] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[01:39:27.072] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             __gchrome_remoteframetoken="693f83ac9cddcc08171fc3e948301302"
+                            >
+                      ...
+          ...
+
+[01:39:27.654] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[01:39:41.035] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[01:39:45.405] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:39:45.925] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[01:39:47.507] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[01:39:48.938] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[01:39:49.620] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[01:40:05.853] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[01:40:10.724] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"...", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/lt/thesis..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html suppressHydrationWarning={true}>
+>                         <body>
+                            ...
+                              <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                                <SegmentTrieNode>
+                                <script>
+                                <script>
+                                <LocaleLayout>
+>                                 <html lang="lt">
+                  ...
+
+[01:40:10.724] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[03:17:14.293] Server  LOG     ✓ Compiled in 19ms
+[03:18:13.235] Server  LOG     ✓ Compiled in 21ms
+[03:19:40.298] Server  LOG     ✓ Compiled in 11ms
+[03:26:50.614] Server  LOG     ✓ Compiled in 13ms
+[03:31:59.703] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:31:59.842] Browser WARN    Image with src "/images/img-009.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:02.258] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[03:32:02.614] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[03:32:09.936] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[03:32:15.281] Browser WARN    Image with src "/images/img-012.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:15.281] Browser WARN    Image with src "/images/img-010.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:15.281] Browser WARN    Image with src "/images/img-011.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:15.281] Browser WARN    Image with src "/images/img-013.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:16.195] Browser WARN    Image with src "/images/img-014.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:18.769] Browser WARN    Image with src "/images/img-016.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:18.769] Browser WARN    Image with src "/images/img-017.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:24.777] Browser WARN    Image with src "/images/img-022.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:24.777] Browser WARN    Image with src "/images/img-021.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:25.277] Browser WARN    Image with src "/images/img-023.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:27.542] Browser WARN    Image with src "/images/img-024.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:27.542] Browser WARN    Image with src "/images/img-026.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:27.542] Browser WARN    Image with src "/images/img-027.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:32:27.542] Browser WARN    Image with src "/images/img-025.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.266] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:44:07.520] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <SegmentViewNode type="page" pagePath="[locale]/t...">
+      <SegmentTrieNode>
+      <PrintPage>
+        <style>
+        <PrintPage>
+          <div className="print-root">
+            <div className="print-sheet">
+              <div>
+              <div>
+              <div>
+              <div>
+              <div>
+                <div>
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Future at the Edge of Extinction"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-001.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-001.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-001.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="No room for waste"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-002.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-002.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-002.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="When the world forgets"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-003.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-003.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-003.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="The beast on a journey"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-004.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-004.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-004.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <p>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Nature / Innate quality"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-005.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-005.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-005.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <h3>
+                    <p>
+                    <p>
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Cultivation"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-006.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-006.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-006.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <p>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Nature–culture poles"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-007.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-007.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-007.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <p>
+                    <div>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt={"Why can't we just agree?"}
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-008.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-008.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-008.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+              <div>
+                <div>
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <p>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Resonances of Art"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-009.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-009.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-009.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <p>
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Inspiration for change"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-012.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-012.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-012.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Cameron Davis artwork"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-010.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-010.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-010.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Vita Zaman, Naujoji Vaidilutė"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-011.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-011.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-011.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Hyperlife, Rithika Merchant"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-013.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-013.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-013.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Mona Caron mural"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-014.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-014.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-014.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Opening of Spacetime Un[b]locked at Ideas Block"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-016.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-016.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-016.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="The Red Dress, Kirstie Macleod"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-017.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-017.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-017.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+              <div>
+                <div>
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Critical situation"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-018.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-018.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-018.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="The world needs a break"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-019.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-019.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-019.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Features of a new world"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-020.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-020.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-020.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Collective embroidery session"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-021.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-021.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-021.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <p>
+                    <div>
+                    <p>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Collective embroidery in Tartu"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-022.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-022.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-022.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Threads of conversation"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-023.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-023.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-023.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+                <div className="print-break">
+                  <div>
+                  <div className="print-body">
+                    <blockquote>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Rhizome of Connections"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-024.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-024.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-024.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"left", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Connected by a bond"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-025.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-025.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-025.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"right", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt="Knowledge and responsibility"
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={280}
+                            height={378}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="280px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-026.jpg&w=32&q=75 32w, /_next/image?url=%2Fimag..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-026.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-026.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    <p>
+                    <div>
+                    <Fig>
+                      <figure style={{float:"none", ...}}>
+                        <div style={{...}}>
+                          <img
+                            alt={"Nature's tear"}
+                            fetchPriority={undefined}
++                           loading="lazy"
+-                           loading="eager"
+                            width={480}
+                            height={360}
+                            decoding="async"
+                            data-nimg="1"
+                            className={undefined}
+                            style={{color:"transparent",objectFit:"contain",width:"100%",height:"auto",display:"block"}}
+                            sizes="(max-width: 760px) 100vw, 480px"
+                            srcSet={"/_next/image?url=%2Fimages%2Fimg-027.jpg&w=640&q=75 640w, /_next/image?url=%2Fim..."}
++                           src={"/_next/image?url=%2Fimages%2Fimg-027.jpg&w=3840&q=75"}
+-                           src={"http://localhost:3000/_next/image?url=%2Fimages%2Fimg-027.jpg&w=3840&q=75"}
+                            ref={function}
+                            onLoad={function onLoad}
+                            onError={function onError}
+                          >
+                        ...
+                    ...
+              ...
+    ...
+
+[03:44:07.520] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-003.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-004.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-005.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-007.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-008.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-009.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-012.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-010.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-011.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-013.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-016.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-017.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-018.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-019.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-020.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-021.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-022.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-024.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-025.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:07.520] Browser WARN    Image with src "/images/img-026.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:09.404] Browser LOG     Waiting for 26 images
+[03:44:11.021] Browser WARN    Image with src "/images/img-005.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:50:55.719] Server  LOG     ✓ Compiled in 13ms
+[03:51:04.859] Server  LOG     ✓ Compiled in 79ms
+[03:51:05.107] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:51:05.252] Browser WARN    Image with src "/images/img-024.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:51:05.252] Browser WARN    Image with src "/images/img-025.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:51:05.252] Browser WARN    Image with src "/images/img-026.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:51:05.252] Browser WARN    Image with src "/images/img-027.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:51:46.910] Server  LOG     ✓ Compiled in 17ms
+[04:02:20.467] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[04:02:21.006] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[04:03:57.947] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[04:04:27.834] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/lt/thesis..." notFound={<SegmentViewNode>} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/lt/thesis..." tree={[...]} params={{locale:"lt"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="lt"
+-                             __gchrome_remoteframetoken="eec4861c3c5a7b39fb01f73145096625"
+                            >
+                      ...
+          ...
+
+[04:04:29.649] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[04:04:30.053] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[04:04:56.894] Browser WARN    Image with src "/images/img-009.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:57.324] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[04:05:06.697] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[04:05:11.113] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[04:07:25.345] Server  LOG     ✓ Compiled in 14ms
+[12:10:26.149] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[12:11:01.459] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en" tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             __gchrome_remoteframetoken="5f532ce14f3fdef60522592b68badec4"
+                            >
+                      ...
+          ...
+
+[12:11:02.195] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[12:12:13.932] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[12:12:13.932] Browser WARN    Image with src "/images/img-009.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:12:14.404] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[12:15:05.135] Browser WARN    Image with src "/images/img-012.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:15:05.136] Browser WARN    Image with src "/images/img-011.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:15:05.136] Browser WARN    Image with src "/images/img-010.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:15:49.775] Browser WARN    Image with src "/images/img-013.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:16:45.429] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:16:49.079] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:17:30.003] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"...", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/lt/thesis..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html suppressHydrationWarning={true}>
+>                         <body>
+                            ...
+                              <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                                <SegmentTrieNode>
+                                <script>
+                                <script>
+                                <LocaleLayout>
+>                                 <html lang="lt">
+                  ...
+
+[12:17:30.003] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[12:19:08.326] Browser WARN    Image with src "/images/img-024.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:19:21.971] Browser WARN    Image with src "/images/img-025.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:19:40.365] Browser WARN    Image with src "/images/img-026.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:21:25.466] Browser WARN    THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[12:23:32.185] Browser LOG     THREE.WebGLRenderer: Context Lost.
+[12:29:26.585] Browser WARN    Image with src "/images/img-021.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:30:36.577] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/lt/thesis..." notFound={<SegmentViewNode>} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/lt/thesis..." tree={[...]} params={{locale:"lt"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="lt"
+-                             __gchrome_remoteframetoken="3185b1d4987d84aac28a6055c04d8830"
+                            >
+                      ...
+          ...
+
+[12:30:36.577] Browser WARN    Image with src "/images/img-021.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:35:19.894] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[12:35:19.894] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:35:21.172] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:35:22.487] Browser WARN    Image with src "/images/img-003.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:35:24.468] Browser WARN    Image with src "/images/img-004.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:38:56.469] Browser WARN    Image with src "/images/img-005.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:52:21.311] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"...", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/en/thesis..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html suppressHydrationWarning={true}>
+>                         <body>
+                            ...
+                              <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                                <SegmentTrieNode>
+                                <script>
+                                <script>
+                                <LocaleLayout>
+>                                 <html lang="en">
+                  ...
+
+[12:52:21.311] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[12:54:04.392] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/en/thesis..." notFound={<SegmentViewNode>} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url="/en/thesis..." tree={[...]} params={{locale:"en"}} cacheNode={{...}} ...>
+                        <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                          <SegmentTrieNode>
+                          <script>
+                          <script>
+                          <LocaleLayout>
+                            <html
+                              lang="en"
+-                             __gchrome_remoteframetoken="1b02071577847c79fca5ece45a4ae21a"
+                            >
+                      ...
+          ...
+
+[12:54:06.649] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> body  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"...", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/lt/thesis..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html suppressHydrationWarning={true}>
+>                         <body>
+                            ...
+                              <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                                <SegmentTrieNode>
+                                <script>
+                                <script>
+                                <LocaleLayout>
+>                                 <html lang="lt">
+                  ...
+
+[12:54:06.649] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. body <html>
+[12:54:07.535] Browser WARN    Image with src "/images/img-005.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:54:12.767] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[12:54:15.221] Browser WARN    Image with src "/images/img-001.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:54:16.231] Browser WARN    Image with src "/images/img-002.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:54:16.806] Browser WARN    Image with src "/images/img-003.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[12:54:17.449] Browser WARN    Image with src "/images/img-004.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

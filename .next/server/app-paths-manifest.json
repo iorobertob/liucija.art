@@ -1,0 +1,14 @@
+{
+  "/[locale]/about/page": "app/[locale]/about/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/thesis/[section]/[sub]/page": "app/[locale]/thesis/[section]/[sub]/page.js",
+  "/[locale]/thesis/[section]/page": "app/[locale]/thesis/[section]/page.js",
+  "/[locale]/thesis/conclusion/page": "app/[locale]/thesis/conclusion/page.js",
+  "/[locale]/thesis/introduction/page": "app/[locale]/thesis/introduction/page.js",
+  "/[locale]/thesis/print/page": "app/[locale]/thesis/print/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/studio/[[...tool]]/page": "app/studio/[[...tool]]/page.js"
+}

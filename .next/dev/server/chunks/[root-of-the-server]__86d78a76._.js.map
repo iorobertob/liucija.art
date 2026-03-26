@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/selves/Documents/ROBERTO/WORKS/DEVELOPMENT/LUICIJA.ART/thesis-website/i18n/routing.ts"],"sourcesContent":["import { defineRouting } from \"next-intl/routing\";\n\nexport const routing = defineRouting({\n  locales: [\"lt\", \"en\"],\n  defaultLocale: \"lt\",\n});\n"],"names":[],"mappings":";;;;AAAA;;AAEO,MAAM,UAAU,IAAA,mPAAa,EAAC;IACnC,SAAS;QAAC;QAAM;KAAK;IACrB,eAAe;AACjB"}},
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":["file:///Users/selves/Documents/ROBERTO/WORKS/DEVELOPMENT/LUICIJA.ART/thesis-website/proxy.ts"],"sourcesContent":["import createMiddleware from \"next-intl/middleware\";\nimport { routing } from \"./i18n/routing\";\n\nexport default createMiddleware(routing);\n\nexport const config = {\n  // Match all paths except Next.js internals, static files, and /studio\n  matcher: [\"/((?!_next|_vercel|studio|.*\\\\..*).*)\"],\n};\n"],"names":[],"mappings":";;;;;;AAAA;AACA;;;uCAEe,IAAA,iMAAgB,EAAC,0HAAO;AAEhC,MAAM,SAAS;IACpB,sEAAsE;IACtE,SAAS;QAAC;KAAwC;AACpD"}}]
+}
