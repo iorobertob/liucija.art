@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import { THESIS, Locale } from "@/lib/thesis-data";
+import { sanityClient, urlFor } from "@/lib/sanity";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -16,6 +18,13 @@ export default async function AboutPage({
   const { locale } = await params;
   const l = locale as Locale;
   const t = await getTranslations({ locale: l, namespace: "nav" });
+
+  const aboutData = await sanityClient.fetch(
+    `*[_type == "about" && _id == "about-singleton"][0]{ portrait }`
+  );
+  const portraitUrl = aboutData?.portrait
+    ? urlFor(aboutData.portrait).width(600).height(800).fit("crop").url()
+    : null;
 
   const bioLT = `Liucija Dervinytė yra menininkė ir tyrėja, kurios praktika tyrinėja ryšius tarp žmogaus, gamtos ir kultūros per tekstilę, koliažą ir kolektyvinę kūrybą. Baigė Vilniaus dailės akademijos Tekstilės meno ir dizaino magistrantūros studijas 2023 metais.`;
 
@@ -127,32 +136,41 @@ export default async function AboutPage({
                   overflow: "hidden",
                 }}
               >
-                {/* Placeholder for artist portrait — replace via Sanity */}
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: 0,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexDirection: "column",
-                    gap: "0.5rem",
-                  }}
-                >
-                  <span style={{ fontSize: "32px", opacity: 0.3 }}>◎</span>
-                  <span
+                {portraitUrl ? (
+                  <Image
+                    src={portraitUrl}
+                    alt={THESIS.author}
+                    fill
+                    style={{ objectFit: "cover" }}
+                    sizes="(max-width: 768px) 100vw, 380px"
+                  />
+                ) : (
+                  <div
                     style={{
-                      fontFamily: "'Inter', system-ui, sans-serif",
-                      fontSize: "10px",
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      color: "var(--color-ink-light)",
-                      opacity: 0.5,
+                      position: "absolute",
+                      inset: 0,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                      gap: "0.5rem",
                     }}
                   >
-                    {l === "lt" ? "Nuotrauka" : "Portrait"}
-                  </span>
-                </div>
+                    <span style={{ fontSize: "32px", opacity: 0.3 }}>◎</span>
+                    <span
+                      style={{
+                        fontFamily: "'Inter', system-ui, sans-serif",
+                        fontSize: "10px",
+                        letterSpacing: "0.1em",
+                        textTransform: "uppercase",
+                        color: "var(--color-ink-light)",
+                        opacity: 0.5,
+                      }}
+                    >
+                      {l === "lt" ? "Nuotrauka" : "Portrait"}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
           </section>
