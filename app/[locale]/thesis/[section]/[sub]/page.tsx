@@ -2,8 +2,10 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import Navigation from "@/components/Navigation";
 import ThesisContent from "@/components/ThesisContent";
+import PortableTextRenderer from "@/components/PortableTextRenderer";
 import { THESIS, Locale, getSubBySlug } from "@/lib/thesis-data";
 import { SUBSECTION_CONTENT } from "@/lib/thesis-content";
+import { sanityClient } from "@/lib/sanity";
 
 export async function generateMetadata({
   params,
@@ -69,15 +71,27 @@ export default async function SubsectionPage({
     nextLabel = t("nav.conclusion");
   }
 
-  const content = SUBSECTION_CONTENT[sub.id];
+  const sanityDoc = await sanityClient.fetch(
+    `*[_id == $id][0]{ bodyLT, bodyEN, titleLT, titleEN }`,
+    { id: `sub-${sub.id}` }
+  );
+
+  const sanityBody = sanityDoc?.[l === "lt" ? "bodyLT" : "bodyEN"];
+  const hardcodedContent = SUBSECTION_CONTENT[sub.id];
+
+  const body = sanityBody?.length > 0
+    ? <PortableTextRenderer body={sanityBody} locale={l} />
+    : (hardcodedContent?.body[l] ?? <p>{l === "lt" ? "Turinys ruošiamas..." : "Content coming soon..."}</p>);
+
+  const title = (l === "lt" ? sanityDoc?.titleLT : sanityDoc?.titleEN) ?? sub.title[l];
 
   return (
     <>
       <Navigation />
       <ThesisContent
         number={`${section.number}.${subIndex + 1}`}
-        title={sub.title[l]}
-        body={content?.body[l] ?? <p>{l === "lt" ? "Turinys ruošiamas..." : "Content coming soon..."}</p>}
+        title={title}
+        body={body}
         breadcrumbs={[
           { label: l === "lt" ? "Tezė" : "Thesis", href: `/${l}` },
           { label: section.title[l], href: `/${l}/thesis/${section.slug[l]}` },

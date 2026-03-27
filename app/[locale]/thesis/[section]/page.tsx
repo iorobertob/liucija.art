@@ -2,7 +2,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import Navigation from "@/components/Navigation";
+import PortableTextRenderer from "@/components/PortableTextRenderer";
 import { THESIS, Locale, getSectionBySlug } from "@/lib/thesis-data";
+import { sanityClient } from "@/lib/sanity";
 
 export async function generateMetadata({
   params,
@@ -26,6 +28,15 @@ export default async function SectionPage({
 
   const section = getSectionBySlug(sectionSlug, l);
   if (!section) notFound();
+
+  const sanitySection = await sanityClient.fetch(
+    `*[_id == $id][0]{ titleLT, titleEN, descriptionLT, descriptionEN, bodyLT, bodyEN }`,
+    { id: `section-${section.number}` }
+  );
+
+  const sectionTitle = (l === "lt" ? sanitySection?.titleLT : sanitySection?.titleEN) ?? section.title[l];
+  const sectionDescription = (l === "lt" ? sanitySection?.descriptionLT : sanitySection?.descriptionEN) ?? section.description[l];
+  const sectionBody = sanitySection?.[l === "lt" ? "bodyLT" : "bodyEN"];
 
   const sectionIndex = THESIS.sections.findIndex((s) => s.id === section.id);
   const prevSection = sectionIndex > 0 ? THESIS.sections[sectionIndex - 1] : null;
@@ -82,7 +93,7 @@ export default async function SectionPage({
                 lineHeight: 1.2,
               }}
             >
-              {section.title[l]}
+              {sectionTitle}
             </h1>
             <p
               style={{
@@ -95,7 +106,7 @@ export default async function SectionPage({
                 maxWidth: "520px",
               }}
             >
-              {section.description[l]}
+              {sectionDescription}
             </p>
             <div
               style={{
@@ -106,6 +117,13 @@ export default async function SectionPage({
               }}
             />
           </header>
+
+          {/* Section body text (from Sanity) */}
+          {sectionBody?.length > 0 && (
+            <article style={{ marginBottom: "3rem" }}>
+              <PortableTextRenderer body={sectionBody} locale={l} />
+            </article>
+          )}
 
           {/* Subsections list */}
           <div style={{ paddingBottom: "4rem" }}>

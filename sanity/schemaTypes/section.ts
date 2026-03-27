@@ -1,5 +1,49 @@
 import { defineType, defineField } from "sanity";
 
+const bodyImageType = {
+  type: "image",
+  options: { hotspot: true },
+  fields: [
+    defineField({ name: "captionLT", type: "string", title: "Caption (Lithuanian)" }),
+    defineField({ name: "captionEN", type: "string", title: "Caption (English)" }),
+    defineField({
+      name: "align",
+      type: "string",
+      title: "Image position",
+      options: {
+        list: [
+          { title: "Float right (beside text)", value: "right" },
+          { title: "Float left (beside text)", value: "left" },
+          { title: "Full-width center", value: "center" },
+        ],
+        layout: "radio",
+      },
+      initialValue: "right",
+    }),
+    defineField({
+      name: "figWidth",
+      type: "number",
+      title: "Width in px (for left/right float only)",
+      initialValue: 280,
+    }),
+  ],
+};
+
+const bodyBlockType = {
+  type: "block",
+  styles: [
+    { title: "Normal paragraph", value: "normal" },
+    { title: "Blockquote (cited quote)", value: "blockquote" },
+    { title: "Poem / Pull quote", value: "poem" },
+  ],
+  marks: {
+    decorators: [
+      { title: "Strong", value: "strong" },
+      { title: "Emphasis", value: "em" },
+    ],
+  },
+};
+
 export const sectionSchema = defineType({
   name: "section",
   title: "Thesis Section",
@@ -43,34 +87,13 @@ export const sectionSchema = defineType({
       name: "bodyLT",
       title: "Body Text (Lithuanian)",
       type: "array",
-      of: [{ type: "block" }, { type: "image", options: { hotspot: true } }],
+      of: [bodyBlockType, bodyImageType],
     }),
     defineField({
       name: "bodyEN",
       title: "Body Text (English)",
       type: "array",
-      of: [{ type: "block" }, { type: "image", options: { hotspot: true } }],
-    }),
-    defineField({
-      name: "images",
-      title: "Section Images",
-      type: "array",
-      of: [
-        {
-          type: "object",
-          fields: [
-            { name: "image", type: "image", title: "Image", options: { hotspot: true } },
-            { name: "captionLT", type: "string", title: "Caption (Lithuanian)" },
-            { name: "captionEN", type: "string", title: "Caption (English)" },
-          ],
-        },
-      ],
-    }),
-    defineField({
-      name: "subsections",
-      title: "Subsections",
-      type: "array",
-      of: [{ type: "reference", to: [{ type: "subsection" }] }],
+      of: [bodyBlockType, bodyImageType],
     }),
   ],
   preview: {
